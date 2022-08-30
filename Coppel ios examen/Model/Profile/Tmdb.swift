@@ -7,6 +7,11 @@
 
 import UIKit
 
-class Tmdb: NSObject {
+struct Tmdb: Codable {
+    let avatarPath: String?
 
+    enum CodingKeys: String, CodingKey {
+        case avatarPath = "avatar_path"
+    }
 }
+

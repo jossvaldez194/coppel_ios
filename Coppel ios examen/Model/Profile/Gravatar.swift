@@ -7,6 +7,6 @@
 
 import UIKit
 
-class Gravatar: NSObject {
-
+struct Gravatar: Codable {
+    let hash: String
 }

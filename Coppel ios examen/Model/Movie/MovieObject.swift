@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - MovieObject
 struct MovieObject: Codable {
     let page: Int
     let results: [ResultsMovie]

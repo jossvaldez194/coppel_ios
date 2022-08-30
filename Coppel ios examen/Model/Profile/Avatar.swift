@@ -7,6 +7,7 @@
 
 import UIKit
 
-class Avatar: NSObject {
-
+struct Avatar: Codable {
+    let gravatar: Gravatar
+    let tmdb: Tmdb
 }

@@ -19,7 +19,8 @@ class MovieShowViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imgLogo.contentMode = . scaleAspectFill
+        imgLogo.makeRoundCorners(byRadius: 20)
     }
     
     static func nib() -> UINib{

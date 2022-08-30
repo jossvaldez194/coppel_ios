@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74900D3F1D7D6A1F333FB102 /* Pods_Coppel_ios_examen_Coppel_ios_examenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143C5594EBDFD2F49F8724BF /* Pods_Coppel_ios_examen_Coppel_ios_examenUITests.framework */; };
 		8556C57628A6C6ED001D52E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556C57528A6C6ED001D52E5 /* AppDelegate.swift */; };
 		8556C57828A6C6ED001D52E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556C57728A6C6ED001D52E5 /* SceneDelegate.swift */; };
-		8556C57A28A6C6ED001D52E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556C57928A6C6ED001D52E5 /* ViewController.swift */; };
+		8556C57A28A6C6ED001D52E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556C57928A6C6ED001D52E5 /* LoginViewController.swift */; };
 		8556C57D28A6C6EE001D52E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8556C57B28A6C6ED001D52E5 /* Main.storyboard */; };
 		8556C58028A6C6EE001D52E5 /* Coppel_ios_examen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8556C57E28A6C6EE001D52E5 /* Coppel_ios_examen.xcdatamodeld */; };
 		8556C58228A6C6EE001D52E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8556C58128A6C6EE001D52E5 /* Assets.xcassets */; };
@@ -17,6 +18,38 @@
 		8556C59028A6C6EE001D52E5 /* Coppel_ios_examenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556C58F28A6C6EE001D52E5 /* Coppel_ios_examenTests.swift */; };
 		8556C59A28A6C6EE001D52E5 /* Coppel_ios_examenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556C59928A6C6EE001D52E5 /* Coppel_ios_examenUITests.swift */; };
 		8556C59C28A6C6EE001D52E5 /* Coppel_ios_examenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556C59B28A6C6EE001D52E5 /* Coppel_ios_examenUITestsLaunchTests.swift */; };
+		8577686B28AAA8ED00943686 /* TokenTMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577686A28AAA8ED00943686 /* TokenTMDB.swift */; };
+		8577686D28AAC04D00943686 /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577686C28AAC04D00943686 /* UserCredentials.swift */; };
+		8577686F28AAEB4300943686 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577686E28AAEB4300943686 /* APIService.swift */; };
+		8577687328AB60E600943686 /* MovieObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577687228AB60E600943686 /* MovieObject.swift */; };
+		8577687528AB617100943686 /* ResultsMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577687428AB617100943686 /* ResultsMovie.swift */; };
+		8577687928ABE68200943686 /* ResultsTv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577687828ABE68200943686 /* ResultsTv.swift */; };
+		8577687B28ABE6D100943686 /* ShowTvObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577687A28ABE6D100943686 /* ShowTvObject.swift */; };
+		8577688228AC00C200943686 /* MovieShowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577688028AC00C200943686 /* MovieShowViewCell.swift */; };
+		8577688328AC00C200943686 /* MovieShowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8577688128AC00C200943686 /* MovieShowViewCell.xib */; };
+		8577688528AC07A500943686 /* HomeTMDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577688428AC07A500943686 /* HomeTMDBViewController.swift */; };
+		8577688828AC3F7B00943686 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577688728AC3F7B00943686 /* HomeViewModel.swift */; };
+		8577688C28AD353F00943686 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577688B28AD353F00943686 /* DetailViewController.swift */; };
+		8577688E28AD375000943686 /* DetailVewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577688D28AD375000943686 /* DetailVewModel.swift */; };
+		8577689128AD3B6A00943686 /* DetailObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577689028AD3B6A00943686 /* DetailObject.swift */; };
+		8577689328AD460200943686 /* SpokenLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577689228AD460200943686 /* SpokenLanguage.swift */; };
+		8577689528AD462C00943686 /* ProductionCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577689428AD462C00943686 /* ProductionCompany.swift */; };
+		8577689728AD465000943686 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577689628AD465000943686 /* Genre.swift */; };
+		8577689C28AD679B00943686 /* makeRoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577689B28AD679B00943686 /* makeRoundCorners.swift */; };
+		8577689F28AD695A00943686 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577689E28AD695A00943686 /* Utils.swift */; };
+		857768A128AD6A6900943686 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768A028AD6A6900943686 /* Constants.swift */; };
+		857768A328AD782400943686 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768A228AD782400943686 /* UserPreferences.swift */; };
+		857768A528AD7AFE00943686 /* SessionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768A428AD7AFE00943686 /* SessionRequest.swift */; };
+		857768A728AD7EE000943686 /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768A628AD7EE000943686 /* SessionResponse.swift */; };
+		857768AB28AD9FEC00943686 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768AA28AD9FEC00943686 /* ProfileViewController.swift */; };
+		857768AD28ADA01B00943686 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768AC28ADA01B00943686 /* ProfileViewModel.swift */; };
+		857768B028ADA17E00943686 /* ProfileObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768AF28ADA17E00943686 /* ProfileObject.swift */; };
+		857768B228ADA1AC00943686 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768B128ADA1AC00943686 /* Avatar.swift */; };
+		857768B428ADA1CF00943686 /* Gravatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768B328ADA1CF00943686 /* Gravatar.swift */; };
+		857768B628ADABB600943686 /* Tmdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857768B528ADABB600943686 /* Tmdb.swift */; };
+		85BE7B4628A75A09009FE43F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE7B4528A75A09009FE43F /* LoginViewModel.swift */; };
+		9D41CAC541D077D88D2D99EF /* Pods_Coppel_ios_examen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5C0089B146144CBF2E5350 /* Pods_Coppel_ios_examen.framework */; };
+		E07A9B8FF9334D23EB23134D /* Pods_Coppel_ios_examenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7361701E6BDA0FA1B6E4EAA /* Pods_Coppel_ios_examenTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +70,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		143C5594EBDFD2F49F8724BF /* Pods_Coppel_ios_examen_Coppel_ios_examenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coppel_ios_examen_Coppel_ios_examenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4BC746FDF8B80760D27BDE /* Pods-Coppel ios examen-Coppel ios examenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coppel ios examen-Coppel ios examenUITests.release.xcconfig"; path = "Target Support Files/Pods-Coppel ios examen-Coppel ios examenUITests/Pods-Coppel ios examen-Coppel ios examenUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3FF344767F78A76A79C3D891 /* Pods-Coppel ios examen-Coppel ios examenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coppel ios examen-Coppel ios examenUITests.debug.xcconfig"; path = "Target Support Files/Pods-Coppel ios examen-Coppel ios examenUITests/Pods-Coppel ios examen-Coppel ios examenUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8556C57228A6C6ED001D52E5 /* Coppel ios examen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coppel ios examen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8556C57528A6C6ED001D52E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8556C57728A6C6ED001D52E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8556C57928A6C6ED001D52E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8556C57928A6C6ED001D52E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8556C57C28A6C6ED001D52E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8556C57F28A6C6EE001D52E5 /* Coppel_ios_examen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coppel_ios_examen.xcdatamodel; sourceTree = "<group>"; };
 		8556C58128A6C6EE001D52E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +87,42 @@
 		8556C59528A6C6EE001D52E5 /* Coppel ios examenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coppel ios examenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8556C59928A6C6EE001D52E5 /* Coppel_ios_examenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coppel_ios_examenUITests.swift; sourceTree = "<group>"; };
 		8556C59B28A6C6EE001D52E5 /* Coppel_ios_examenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coppel_ios_examenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8577686A28AAA8ED00943686 /* TokenTMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTMDB.swift; sourceTree = "<group>"; };
+		8577686C28AAC04D00943686 /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		8577686E28AAEB4300943686 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8577687228AB60E600943686 /* MovieObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObject.swift; sourceTree = "<group>"; };
+		8577687428AB617100943686 /* ResultsMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsMovie.swift; sourceTree = "<group>"; };
+		8577687828ABE68200943686 /* ResultsTv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTv.swift; sourceTree = "<group>"; };
+		8577687A28ABE6D100943686 /* ShowTvObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTvObject.swift; sourceTree = "<group>"; };
+		8577688028AC00C200943686 /* MovieShowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieShowViewCell.swift; sourceTree = "<group>"; };
+		8577688128AC00C200943686 /* MovieShowViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieShowViewCell.xib; sourceTree = "<group>"; };
+		8577688428AC07A500943686 /* HomeTMDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTMDBViewController.swift; sourceTree = "<group>"; };
+		8577688728AC3F7B00943686 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8577688B28AD353F00943686 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8577688D28AD375000943686 /* DetailVewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVewModel.swift; sourceTree = "<group>"; };
+		8577689028AD3B6A00943686 /* DetailObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailObject.swift; sourceTree = "<group>"; };
+		8577689228AD460200943686 /* SpokenLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenLanguage.swift; sourceTree = "<group>"; };
+		8577689428AD462C00943686 /* ProductionCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCompany.swift; sourceTree = "<group>"; };
+		8577689628AD465000943686 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		8577689B28AD679B00943686 /* makeRoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeRoundCorners.swift; sourceTree = "<group>"; };
+		8577689E28AD695A00943686 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		857768A028AD6A6900943686 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		857768A228AD782400943686 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		857768A428AD7AFE00943686 /* SessionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRequest.swift; sourceTree = "<group>"; };
+		857768A628AD7EE000943686 /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
+		857768AA28AD9FEC00943686 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		857768AC28ADA01B00943686 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		857768AF28ADA17E00943686 /* ProfileObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileObject.swift; sourceTree = "<group>"; };
+		857768B128ADA1AC00943686 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		857768B328ADA1CF00943686 /* Gravatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gravatar.swift; sourceTree = "<group>"; };
+		857768B528ADABB600943686 /* Tmdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tmdb.swift; sourceTree = "<group>"; };
+		85BE7B4528A75A09009FE43F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8D5C0089B146144CBF2E5350 /* Pods_Coppel_ios_examen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coppel_ios_examen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910A888007ADBA49864B4E6C /* Pods-Coppel ios examenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coppel ios examenTests.debug.xcconfig"; path = "Target Support Files/Pods-Coppel ios examenTests/Pods-Coppel ios examenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D09957B0C8315563B3228EB /* Pods-Coppel ios examen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coppel ios examen.debug.xcconfig"; path = "Target Support Files/Pods-Coppel ios examen/Pods-Coppel ios examen.debug.xcconfig"; sourceTree = "<group>"; };
+		B7361701E6BDA0FA1B6E4EAA /* Pods_Coppel_ios_examenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coppel_ios_examenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88AB44F29D24BAF48109D4B /* Pods-Coppel ios examenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coppel ios examenTests.release.xcconfig"; path = "Target Support Files/Pods-Coppel ios examenTests/Pods-Coppel ios examenTests.release.xcconfig"; sourceTree = "<group>"; };
+		E444454FE70D7E13E1BC8E31 /* Pods-Coppel ios examen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coppel ios examen.release.xcconfig"; path = "Target Support Files/Pods-Coppel ios examen/Pods-Coppel ios examen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D41CAC541D077D88D2D99EF /* Pods_Coppel_ios_examen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07A9B8FF9334D23EB23134D /* Pods_Coppel_ios_examenTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +146,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74900D3F1D7D6A1F333FB102 /* Pods_Coppel_ios_examen_Coppel_ios_examenUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0764A17EE260DAE3399714D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D09957B0C8315563B3228EB /* Pods-Coppel ios examen.debug.xcconfig */,
+				E444454FE70D7E13E1BC8E31 /* Pods-Coppel ios examen.release.xcconfig */,
+				3FF344767F78A76A79C3D891 /* Pods-Coppel ios examen-Coppel ios examenUITests.debug.xcconfig */,
+				1D4BC746FDF8B80760D27BDE /* Pods-Coppel ios examen-Coppel ios examenUITests.release.xcconfig */,
+				910A888007ADBA49864B4E6C /* Pods-Coppel ios examenTests.debug.xcconfig */,
+				C88AB44F29D24BAF48109D4B /* Pods-Coppel ios examenTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8556C56928A6C6ED001D52E5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +173,8 @@
 				8556C58E28A6C6EE001D52E5 /* Coppel ios examenTests */,
 				8556C59828A6C6EE001D52E5 /* Coppel ios examenUITests */,
 				8556C57328A6C6ED001D52E5 /* Products */,
+				0764A17EE260DAE3399714D2 /* Pods */,
+				EFA34CC1B7E19BAD6504F7FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +191,14 @@
 		8556C57428A6C6ED001D52E5 /* Coppel ios examen */ = {
 			isa = PBXGroup;
 			children = (
+				8577689D28AD694C00943686 /* Utils */,
+				8577689A28AD677D00943686 /* Extensions */,
+				85BE7B4428A759B4009FE43F /* Services */,
+				85BE7B4328A759A5009FE43F /* ViewModel */,
+				85BE7B4228A75998009FE43F /* View */,
+				85BE7B4128A7598B009FE43F /* Model */,
 				8556C57528A6C6ED001D52E5 /* AppDelegate.swift */,
 				8556C57728A6C6ED001D52E5 /* SceneDelegate.swift */,
-				8556C57928A6C6ED001D52E5 /* ViewController.swift */,
 				8556C57B28A6C6ED001D52E5 /* Main.storyboard */,
 				8556C58128A6C6EE001D52E5 /* Assets.xcassets */,
 				8556C58328A6C6EE001D52E5 /* LaunchScreen.storyboard */,
@@ -130,6 +225,161 @@
 			path = "Coppel ios examenUITests";
 			sourceTree = "<group>";
 		};
+		8577687628ABE65500943686 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				8577687228AB60E600943686 /* MovieObject.swift */,
+				8577687428AB617100943686 /* ResultsMovie.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		8577687728ABE66200943686 /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				8577687828ABE68200943686 /* ResultsTv.swift */,
+				8577687A28ABE6D100943686 /* ShowTvObject.swift */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		8577688628AC3F5300943686 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8577688028AC00C200943686 /* MovieShowViewCell.swift */,
+				8577688128AC00C200943686 /* MovieShowViewCell.xib */,
+				8577688428AC07A500943686 /* HomeTMDBViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8577688928AC503700943686 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8556C57928A6C6ED001D52E5 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8577688A28AC507700943686 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				857768A428AD7AFE00943686 /* SessionRequest.swift */,
+				8577686A28AAA8ED00943686 /* TokenTMDB.swift */,
+				8577686C28AAC04D00943686 /* UserCredentials.swift */,
+				857768A628AD7EE000943686 /* SessionResponse.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8577688F28AD3B1900943686 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8577689028AD3B6A00943686 /* DetailObject.swift */,
+				8577689228AD460200943686 /* SpokenLanguage.swift */,
+				8577689428AD462C00943686 /* ProductionCompany.swift */,
+				8577689628AD465000943686 /* Genre.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8577689A28AD677D00943686 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8577689B28AD679B00943686 /* makeRoundCorners.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8577689D28AD694C00943686 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8577689E28AD695A00943686 /* Utils.swift */,
+				857768A028AD6A6900943686 /* Constants.swift */,
+				857768A228AD782400943686 /* UserPreferences.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		857768A828AD9FCD00943686 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8577688B28AD353F00943686 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		857768A928AD9FD500943686 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				857768AA28AD9FEC00943686 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		857768AE28ADA17200943686 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				857768AF28ADA17E00943686 /* ProfileObject.swift */,
+				857768B128ADA1AC00943686 /* Avatar.swift */,
+				857768B328ADA1CF00943686 /* Gravatar.swift */,
+				857768B528ADABB600943686 /* Tmdb.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		85BE7B4128A7598B009FE43F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				857768AE28ADA17200943686 /* Profile */,
+				8577688F28AD3B1900943686 /* Detail */,
+				8577688A28AC507700943686 /* Login */,
+				8577687728ABE66200943686 /* TV */,
+				8577687628ABE65500943686 /* Movie */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85BE7B4228A75998009FE43F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				857768A928AD9FD500943686 /* Profile */,
+				857768A828AD9FCD00943686 /* Detail */,
+				8577688928AC503700943686 /* Login */,
+				8577688628AC3F5300943686 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85BE7B4328A759A5009FE43F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				85BE7B4528A75A09009FE43F /* LoginViewModel.swift */,
+				8577688728AC3F7B00943686 /* HomeViewModel.swift */,
+				8577688D28AD375000943686 /* DetailVewModel.swift */,
+				857768AC28ADA01B00943686 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		85BE7B4428A759B4009FE43F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8577686E28AAEB4300943686 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EFA34CC1B7E19BAD6504F7FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5C0089B146144CBF2E5350 /* Pods_Coppel_ios_examen.framework */,
+				143C5594EBDFD2F49F8724BF /* Pods_Coppel_ios_examen_Coppel_ios_examenUITests.framework */,
+				B7361701E6BDA0FA1B6E4EAA /* Pods_Coppel_ios_examenTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +387,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8556C59F28A6C6EE001D52E5 /* Build configuration list for PBXNativeTarget "Coppel ios examen" */;
 			buildPhases = (
+				C05A6BBE33624EF1F474BEF1 /* [CP] Check Pods Manifest.lock */,
 				8556C56E28A6C6ED001D52E5 /* Sources */,
 				8556C56F28A6C6ED001D52E5 /* Frameworks */,
 				8556C57028A6C6ED001D52E5 /* Resources */,
@@ -154,6 +405,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8556C5A228A6C6EE001D52E5 /* Build configuration list for PBXNativeTarget "Coppel ios examenTests" */;
 			buildPhases = (
+				45311D7433BAD14462CB3102 /* [CP] Check Pods Manifest.lock */,
 				8556C58728A6C6EE001D52E5 /* Sources */,
 				8556C58828A6C6EE001D52E5 /* Frameworks */,
 				8556C58928A6C6EE001D52E5 /* Resources */,
@@ -172,6 +424,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8556C5A528A6C6EE001D52E5 /* Build configuration list for PBXNativeTarget "Coppel ios examenUITests" */;
 			buildPhases = (
+				6B3D8AF0AF7A68A7623F41B0 /* [CP] Check Pods Manifest.lock */,
 				8556C59128A6C6EE001D52E5 /* Sources */,
 				8556C59228A6C6EE001D52E5 /* Frameworks */,
 				8556C59328A6C6EE001D52E5 /* Resources */,
@@ -236,6 +489,7 @@
 			files = (
 				8556C58528A6C6EE001D52E5 /* LaunchScreen.storyboard in Resources */,
 				8556C58228A6C6EE001D52E5 /* Assets.xcassets in Resources */,
+				8577688328AC00C200943686 /* MovieShowViewCell.xib in Resources */,
 				8556C57D28A6C6EE001D52E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,15 +510,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45311D7433BAD14462CB3102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coppel ios examenTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B3D8AF0AF7A68A7623F41B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coppel ios examen-Coppel ios examenUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05A6BBE33624EF1F474BEF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coppel ios examen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8556C56E28A6C6ED001D52E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857768A128AD6A6900943686 /* Constants.swift in Sources */,
+				857768B428ADA1CF00943686 /* Gravatar.swift in Sources */,
+				8577688828AC3F7B00943686 /* HomeViewModel.swift in Sources */,
+				857768AD28ADA01B00943686 /* ProfileViewModel.swift in Sources */,
+				8577689128AD3B6A00943686 /* DetailObject.swift in Sources */,
+				8577689C28AD679B00943686 /* makeRoundCorners.swift in Sources */,
 				8556C58028A6C6EE001D52E5 /* Coppel_ios_examen.xcdatamodeld in Sources */,
-				8556C57A28A6C6ED001D52E5 /* ViewController.swift in Sources */,
+				857768B228ADA1AC00943686 /* Avatar.swift in Sources */,
+				857768B028ADA17E00943686 /* ProfileObject.swift in Sources */,
+				8556C57A28A6C6ED001D52E5 /* LoginViewController.swift in Sources */,
+				857768B628ADABB600943686 /* Tmdb.swift in Sources */,
+				8577686D28AAC04D00943686 /* UserCredentials.swift in Sources */,
+				8577687328AB60E600943686 /* MovieObject.swift in Sources */,
+				857768A328AD782400943686 /* UserPreferences.swift in Sources */,
+				8577689728AD465000943686 /* Genre.swift in Sources */,
+				8577686B28AAA8ED00943686 /* TokenTMDB.swift in Sources */,
+				8577687928ABE68200943686 /* ResultsTv.swift in Sources */,
+				8577689528AD462C00943686 /* ProductionCompany.swift in Sources */,
+				8577688C28AD353F00943686 /* DetailViewController.swift in Sources */,
+				8577687B28ABE6D100943686 /* ShowTvObject.swift in Sources */,
+				8577687528AB617100943686 /* ResultsMovie.swift in Sources */,
+				857768A528AD7AFE00943686 /* SessionRequest.swift in Sources */,
+				85BE7B4628A75A09009FE43F /* LoginViewModel.swift in Sources */,
+				857768AB28AD9FEC00943686 /* ProfileViewController.swift in Sources */,
+				8577688528AC07A500943686 /* HomeTMDBViewController.swift in Sources */,
 				8556C57628A6C6ED001D52E5 /* AppDelegate.swift in Sources */,
+				8577688E28AD375000943686 /* DetailVewModel.swift in Sources */,
+				8577689328AD460200943686 /* SpokenLanguage.swift in Sources */,
 				8556C57828A6C6ED001D52E5 /* SceneDelegate.swift in Sources */,
+				857768A728AD7EE000943686 /* SessionResponse.swift in Sources */,
+				8577686F28AAEB4300943686 /* APIService.swift in Sources */,
+				8577688228AC00C200943686 /* MovieShowViewCell.swift in Sources */,
+				8577689F28AD695A00943686 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +788,7 @@
 		};
 		8556C5A028A6C6EE001D52E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D09957B0C8315563B3228EB /* Pods-Coppel ios examen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,12 +811,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8556C5A128A6C6EE001D52E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E444454FE70D7E13E1BC8E31 /* Pods-Coppel ios examen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,12 +840,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		8556C5A328A6C6EE001D52E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910A888007ADBA49864B4E6C /* Pods-Coppel ios examenTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +867,7 @@
 		};
 		8556C5A428A6C6EE001D52E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88AB44F29D24BAF48109D4B /* Pods-Coppel ios examenTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +888,7 @@
 		};
 		8556C5A628A6C6EE001D52E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF344767F78A76A79C3D891 /* Pods-Coppel ios examen-Coppel ios examenUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +907,7 @@
 		};
 		8556C5A728A6C6EE001D52E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4BC746FDF8B80760D27BDE /* Pods-Coppel ios examen-Coppel ios examenUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

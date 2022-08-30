@@ -14,55 +14,62 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var lblErrorMessage: UILabel!
     
-    let api_base = "https://api.themoviedb.org/3/"
-    let url_auth = "authentication/token/new?api_key="
-    let url_login = "authentication/token/validate_with_login"
-    let api_key = "f48e69d6a8485ef2819154aca28c93cd"
-    
     var mUser : String = ""
     var mPassWord : String = ""
     
-    var loginButton = CustomUIButton()
+    var statusRequest : String?
     
     private var loginViewModel : LoginViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.loginViewModel =  LoginViewModel()
+        callToViewModelForToken()
     }
     
     @IBAction func onClickLogin(_ sender: Any) {
-        /*print("Button pressed")
         mUser = tfUser.text ?? ""
         mPassWord = tfPassword.text ?? ""
-        callToViewModelForUIUpdate()*/
-        
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "home") as? HomeTMDBViewController
-        self.navigationController?.popViewController(animated: true)
-        self.navigationController?.pushViewController(vc!, animated: true)
-        
+        initObservers()
+        loginViewModel.sendRequestCreateSession(user: mUser, pasw: mPassWord)
         
     }
-
-    //--------------------------------------------------------------------------//
-    func callToViewModelForUIUpdate(){
-        self.loginViewModel =  LoginViewModel()
-        //self.loginViewModel.sendRequestGetPopular()
-        //self.loginViewModel.sendRequestGetTopRated()
-        self.loginViewModel.sendRequestGetOnTheAir()
-        //self.loginViewModel.sendRequestGetAiringToday()
-        self.loginViewModel.sessionDataBind = { [weak self]  in
+    
+    private func initObservers(){
+        callToViewModelForSession()
+    }
+    
+    func callToViewModelForSession(){
+        self.loginViewModel.successDataBind = { [weak self]  in
             DispatchQueue.main.async {
+                if (self?.loginViewModel.success?.isEmpty ?? false){
+                let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "home") as? HomeTMDBViewController
+                self?.navigationController?.popViewController(animated: true)
+                self?.navigationController?.pushViewController(vc!, animated: true)
+                }else{
+                    self?.lblErrorMessage.isHidden = false
+                    self?.lblErrorMessage.text = "No se puede acceder a la aplicación"
+                }
+            }
+        }
+        //self.loginViewModel.sendRequestCreateToken(user: mUser, pasw: mPassWord)
+    }
+    
+    func callToViewModelForToken(){
+        self.loginViewModel.tokenDataBind = { [weak self]  in
+            DispatchQueue.main.async {
+                if (self?.loginViewModel.userTokenValue != nil){
+                    self?.openWebNavigator()
+                }
                 
-               
-                
-                /*let viewControllerB = HomeTMDBViewController()
-                self?.navigationController?.pushViewController(viewControllerB, animated: true)*/
             }
         }
     }
-        
-    func updateDataSource(){
-           
+    
+    private func openWebNavigator(){
+        if let url = URL(string: "https://www.themoviedb.org/authenticate/\(self.loginViewModel.userTokenValue.request_token)") {
+            UIApplication.shared.open(url)
+        }
     }
+    
 }

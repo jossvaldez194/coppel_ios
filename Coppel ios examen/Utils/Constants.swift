@@ -7,6 +7,6 @@
 
 import UIKit
 
-class Constants: NSObject {
-
+struct Constants {
+    static let BASE_IMAGE = "https://image.tmdb.org/t/p/original"
 }

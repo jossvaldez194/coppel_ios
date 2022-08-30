@@ -7,6 +7,6 @@
 
 import UIKit
 
-class SessionResponse: NSObject {
-
+struct SessionResponse: Codable {
+    let session_id : String
 }
